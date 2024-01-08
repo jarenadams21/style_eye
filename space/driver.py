@@ -177,5 +177,6 @@ def inference (model, val_dl):
   acc = correct_prediction/total_prediction
   print(f'Accuracy: {acc:.2f}, Total items: {total_prediction}')
 
-# Run inference on trained model with the validation set
+# Run inference on the [best] trained model with the validation set
+style_model.load_state_dict(torch.load('checkpoint_model.pth'))
 inference(style_model, val_dl)
