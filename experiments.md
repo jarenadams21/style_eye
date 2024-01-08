@@ -17,6 +17,7 @@ Accuracy: 0.07, Total items: 548
 * Early stopping used
 * 42% accuracy using ~10% of the train dataset that is returned from grabbing the style_train csv data and ~10% of the val dataset when grabbing images using the style_val csv data.
 * 3 (3x3) kernels of convolution into a linear layer that linearly classifies between 27 classes from and input 64 matrix
+* Early Stopping counter to maintain the best model throughout training and terminating if no improvements found after 5 epochs
 
 ```
 Epoch 1/10, Train Loss: 2.2716, Train Acc: 0.3693, Val Loss: 2.1343, Val Acc: 0.3448

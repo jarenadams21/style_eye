@@ -64,7 +64,7 @@ style_model = style_model.to(device)
 # Check that it is on Cuda
 next(style_model.parameters()).device
 
-
+# Counter function to keep track of the best model throughout training, and to terminate if val loss does not improve across 5 epochs
 class EarlyStopping:
     def __init__(self, patience=5, verbose=False, delta=0):
         self.patience = patience
