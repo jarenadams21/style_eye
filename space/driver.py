@@ -28,8 +28,8 @@ train_df = pd.read_csv(train_csv_path)
 val_df = pd.read_csv(val_csv_path)
 
 # Sample 10% of the data
-train_df_sampled = train_df.sample(frac=0.10)
-val_df_sampled = val_df.sample(frac=0.10)
+train_df_sampled = train_df.sample(frac=0.25)
+val_df_sampled = val_df.sample(frac=0.25)
 
 # Create dataset objects from the sampled DataFrames
 ArtDataset = pre_processing.ArtDataset
@@ -149,7 +149,7 @@ def training(model, train_dl, val_dl, num_epochs):
     print('Finished Training')
 
 # Usage
-num_epochs = 10
+num_epochs = 12
 training(style_model, train_dl, val_dl, num_epochs)
 
 # ----------------------------

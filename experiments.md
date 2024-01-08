@@ -43,3 +43,9 @@ Validation loss decreased (2.075490 --> 2.059157). Saving model ...
 Finished Training
 Accuracy: 0.42, Total items: 1079
 ```
+
+### Planned Experiment
+* 12 epochs
+* 5 convolution layers ending at 256 input size to linear layer
+* Kernel sizes now go from (3), (5), (5), (7), (7) across the five blocks
+* 25% of the data is now being used in both the validation dataset and training dataset (25% of each)
