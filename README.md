@@ -27,3 +27,4 @@ source space/bin/activate
 ##### Next steps
 * k-Fold-Cross Validation, needs changes to data loading and training loop (but good for evaluation)
 * Next steps (possibly expand to what artists the input style mimics the best, expand on good system design for that, could produce example images of that artists that relate and find common ground with ideas
+* Gradio app setup for interface and take input images, expand on possibilities that it offers out of box
